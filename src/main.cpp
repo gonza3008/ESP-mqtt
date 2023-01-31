@@ -16,7 +16,7 @@ unsigned long currentMillis = 0;
 unsigned long timer1 = 0;
 unsigned long timer2 = 0;
 unsigned long timer3 = 0;
-#define TIME_INTERVAL (10000)
+#define TIME_INTERVAL (1200000)
 
 char ssid[50];
 char pass[50];

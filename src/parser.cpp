@@ -16,11 +16,7 @@ String getFromTerminal()
     // empiezo a separar por items
     StringSplitter *splitter = new StringSplitter(trama, '\t', 35); // new StringSplitter(string_to_split, delimiter, limit) Max 5 strings
     int itemCount = splitter->getItemCount();                       // Obtengo la cantidad de subStrings del mensaje entrante separados por un ";".
-    for (int i = 0; i < itemCount; i++)
-    {
-      item = splitter->getItemAtIndex(i);
-      Serial.println(item);
-    }
+
     // reinicio el string largo de datos
     trama = "";
     for (int i = 0; i < itemCount; i++)
